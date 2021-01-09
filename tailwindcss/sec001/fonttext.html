@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .bg-image{
+            background-image: url('images/img1.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="mb-16 bg-image h-24 w-40"></div>
+    <img class="mb-16 w-96 h-24" src="images/img1.jpg" alt="">
+    <img class="mb-16 w-96 h-24 object-cover" src="images/img1.jpg" alt="">
+    <img src="images/img1.jpg" alt="">
+
+    <div class="mb-16 h-96 w-96 bg-contain bg-center bg-no-repeat" style="background-image: url('images/img1.jpg');"></div>
+
+    <div class="mb-16 w-40 shadow">shadow</div>
+    <div class="mb-16 w-40 shadow-md">shadow</div>
+    <div class="mb-16 w-40 shadow-lg">shadow</div>
+
+    <p class="text-2xl">テキスト 2xl</p>
+    <p class="mt-16 leading-relaxed">
+        文字の間の幅が開く<br>
+        文字の間の幅が開く<br>
+        文字の間の幅が開く<br>
+    </p>
+    <p class="mt-16 tracking-wider">
+        文字の間の幅が開く<br>
+        文字の間の幅が開く<br>
+        文字の間の幅が開く<br>
+    </p>
+    <div class="text-center">
+        ブロック要素中央
+    </div>
+
+    <!-- 文字、線、背景 -->
+    <p class="mt-16 text-blue-400 text-opacity-50">文字の色</p>
+    <div class="border border-pink-500 mt-16 bg-green-100">線の色</div>
+
+    <button class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold w-28 py-4">ボタン</button>
+    <input type="text" class="border-2 p-2 focus:outline-none focus:border-red-300">
+
+
+    <div class="border-2 border-red-400">線の太さ</div>
+    <div class="mt-16 flex justify-around divide-x divide-green-400">
+        <div class="flex-grow text-center">区切り線-x</div>
+        <div class="flex-grow text-center">区切り線-x</div>
+        <div class="flex-grow text-center">区切り線-x</div>
+    </div>
+    <div class="mt-16 rounded-full w-24 bg-indigo-500 text-white text-center py-2">
+        rounded
+    </div>
+    <div class="mt-16 rounded-full w-24 bg-indigo-500 text-white text-center py-9">
+        rounded
+    </div>
+
+
+    <div class="mt-16 rounded-full w-24 bg-indigo-500 text-white text-center ring-4 ring-indigo-700 ring-offset-4 ring-offset-blue-500 py-9">
+        rounded
+    </div>
+
+    
+</body>
+</html>

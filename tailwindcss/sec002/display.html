@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <span class="block border border-red-400">インライン2ブロック</span>
+    <span>ブロック</span>
+
+    <!-- メニュー -->
+    <header class="md:flex justify-between mb-8">
+        <h1 class="pl-8">ロゴ</h1>
+        <nav>
+            <ul class="md:flex justify-end md:space-x-16 pr-8">
+                <li>Home</li>
+                <li>Info</li>
+                <li>Info1</li>
+                <li>Info2</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="text-center mb-8">横並びのサンプル</h2>
+        <div class="flex justify-center space-x-16">
+            <div class="w-1/4 border text-center">
+                <h3 class="p-2">タイトル</h3>
+                <p class="p-4">文章がここに入ります文章がここに入ります文章がここに入ります</p>
+            </div>
+            <div class="w-1/4 border text-center">
+                <h3 class="p-2">タイトル</h3>
+                <p class="p-4">文章がここに入ります文章がここに入ります文章がここに入ります</p>
+            </div>
+            <div class="w-1/4 border text-center">
+                <h3 class="p-2">タイトル</h3>
+                <p class="p-4">文章がここに入ります文章がここに入ります文章がここに入ります</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-16">
+        <h2 class="text-center mb-8">入れ替えテスト</h2>
+        <div class="flex items-center">
+            <div class="w-1/2 p-16">ここに文章が入ります</div>
+            <img src="images/img1.jpg" alt="" width="50%">
+        </div>
+        <div class="flex flex-row-reverse items-center">
+            <div class="w-1/2 p-16">ここに文章が入ります</div>
+            <img src="images/img1.jpg" alt="" width="50%">
+        </div>
+        <div class="flex items-center">
+            <div class="w-1/2 p-16">ここに文章が入ります</div>
+            <img src="images/img1.jpg" alt="" width="50%">
+        </div>
+    </section>
+
+    
+    <div class="grid grid-cols-4 gap-4">
+        <div class="border-2">1</div>
+        <div class="border-2 col-span-2 bg-red-300">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2 h-16">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+        <div class="border-2">1</div>
+    </div>
+
+    <footer class="bg-gray-200">
+        <div class="p-8 grid grid-cols-4 gap-8">
+            <div>
+                <p class="mb-8">ロゴ</p>
+                <address>
+                    〒000-0000 福岡県丸々っっっx
+                </address>
+            </div>
+            <div>
+                <div class="mb-8">最新の記事</div>
+                <ul>
+                    <li>記事</li>
+                    <li>記事</li>
+                    <li>記事</li>
+                    <li>記事</li>
+                </ul>
+            </div>
+            <div>
+                <div class="mb-8">最新の記事</div>
+                <ul>
+                    <li>記事</li>
+                    <li>記事</li>
+                    <li>記事</li>
+                    <li>記事</li>
+                </ul>
+            </div>
+            <div></div>
+
+            <div class="col-span-4 justify-self-center">
+                Copyright all rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-green-300 md:bg-blue-300">
+        aaa
+    </div>
+    <div class="text-center">
+        <button class="bg-indigo-600 hover:bg-indigo-500 text-white p-4 w-1/2 md:max-w-md">
+            レスポンシブ対応
+        </button>
+    </div>
+
+    <div class="mt-8"></div>
+
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="md:flex-shrink-0">
+                <img class="h-48 w-full object-cover md:w-48" src="images/img1.jpg" alt="Man looking at item at a store">
+            </div>
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+</body>
+</html>
